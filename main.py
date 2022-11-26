@@ -34,7 +34,7 @@ def flatten(list):
     return [item for sublist in list for item in sublist]
 
 
-def gsat(datafile, cmd='gsat2', p=0.4, i=1000, T=5):
+def gsat(datafile, cmd='gsat2', p=0.4, i=500, T=1):
     process = subprocess.run([
         cmd,
         '-r', random.randint(1, 1_000_000).__str__(),
@@ -49,7 +49,7 @@ def gsat(datafile, cmd='gsat2', p=0.4, i=1000, T=5):
     return datafile, int(iterations_count), satisfiable
 
 
-def probsat(datafile, cmd='/home/zapotlub/probSAT/probSAT', fct=0, cb=2.3, runs=500, maxflips=500):
+def probsat(datafile, cmd='/home/zapotlub/probSAT/probSAT', fct=0, cb=2.3, maxflips=500, runs=1):
     process = subprocess.run([
         cmd,
         '--fct', fct.__str__(),
