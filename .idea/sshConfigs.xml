@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SshConfigs">
-    <configs>
-      <sshConfig authType="OPEN_SSH" host="ni-kop.fit.cvut.cz" id="029ed6c6-4b9e-4fe7-a518-ab3a049722c6" port="22" nameFormat="DESCRIPTIVE" username="zapotlub" useOpenSSHConfig="true" />
-    </configs>
-  </component>
-</project>
